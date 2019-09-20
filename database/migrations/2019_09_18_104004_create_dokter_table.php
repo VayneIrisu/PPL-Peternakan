@@ -15,6 +15,10 @@ class CreateDokterTable extends Migration
     {
         Schema::create('dokter', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nama');
+            $table->string('alamat');
+            $table->string('NoHP');
+            $table->string('Saran');
             $table->timestamps();
         });
     }
